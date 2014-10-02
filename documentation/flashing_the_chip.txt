@@ -1,0 +1,19 @@
+Flashing Your Files!
+=========================
+
+To flash code onto an ATmega chip, run the following commands:
+	-make FILE=client flash for the client
+	-make FILE=server flash for the server
+You may need to append sudo to these commands based on your system setup. You can
+similarly flash the demo node codes to use the multiple node model.
+
+The colors on the programmer are as follows:
+Red = power
+Orange = ground
+Yellow = 1
+Green = 2
+Blue = 12
+Purple = 31
+
+Keep in mind that some of the boards may be numbered wrong, the purple wire always goes to
+the pin with the resistor on the left side of the PCB.
