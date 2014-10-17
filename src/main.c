@@ -31,6 +31,11 @@ int main (void) {
     DDRB |= 0xFF; // set all PORTB pins for output
     PORTB |= _BV(PB4); //set pin PB4 high
     
+
+    /*Your code for tuning on multiple LEDs*/
+
+
+
     sei(); // enable global interrupts    
     initButton(); // intitialize button interrupts
 
