@@ -29,7 +29,12 @@ ISR(INT0_vect) {
 
 int main (void) {
     DDRB |= 0xFF; // set all PORTB pins for output
+    /*Same as saying*/
+    //DDRB = 11111111;
+
     PORTB |= _BV(PB4); //set pin PB4 high
+    /*Same as saying*/
+    //PORTB = 00001000;
     
 
     /*Your code for tuning on multiple LEDs*/
@@ -40,6 +45,6 @@ int main (void) {
     initButton(); // intitialize button interrupts
 
     for (;;) {
-        // listen for button presses forever
+        // keeps led on forever
     }
 }
