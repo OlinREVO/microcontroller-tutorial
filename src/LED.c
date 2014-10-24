@@ -1,10 +1,7 @@
 #define F_CPU (1000000L) //pre-defining CPU speed
 #include <avr/io.h>
 #include <util/delay.h>
-#include <inttypes.h>
-#include <avr/interrupt.h>
 #include <stdlib.h>
-//#include "uart.h"
 
 int main (void) {
     DDRB |= 0xFF; // set all PORTB pins for output
